@@ -1,0 +1,16 @@
+GET http://localhost:3000
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzVkZmFhMTdhNGMwOGZhY2FjYzNiNmMiLCJpYXQiOjE3MzQyMTI4NDgsImV4cCI6MTczNDIxNjQ0OH0.ZQ67lL4ooonR1NhdADO1i0VbmwAZG7P4sdNbfjoOljg
+### Register 
+POST  http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "email":"yash123123@gmail.com",
+    "password":"1234"
+}
+###Refresh Token
+POST  http://localhost:3000/auth/refresh-token
+###Logout
+DELETE   http://localhost:3000/auth/logout
+###Login Route
+POST  http://localhost:3000/auth/login
